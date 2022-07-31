@@ -1,12 +1,13 @@
-/* Joselyne Aracely Rivera Cifuentes
-/* carnet 0901-17-5
-/* Certificacion de cursos
-/*Fallo en uso de botones 
-*/
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package asignacion.vista;
 
 import asignacion.datos.CertificacionCursoDAO;
 import asignacion.dominio.CertificacionCurso;
+import com.sun.jdi.connect.spi.Connection;
 
 import java.util.List;
 import javax.swing.JOptionPane;
@@ -17,11 +18,6 @@ import javax.swing.table.DefaultTableModel;
  * @author linri
  */
 public class CertificacionCursos extends javax.swing.JInternalFrame {
-
-    private static List<CertificacionCursos> select(){
-        throw new UnsupportedOperationException("not supported yet, ");
-    }
-
 
 public void llenadoDeTablas(){
     DefaultTableModel modelo = new DefaultTableModel();
@@ -58,21 +54,21 @@ public void llenadoDeTablas(){
 
         certificacionaconsultar = certificacioncursoDAO.query(certificacionaconsultar);
 
-        jTextnombre1.setText(certificacionaconsultar.getIdAlumno());
-        jTextcarnet.setText(certificacionaconsultar.getCarnet());
-        jTextSemestre.setText(certificacionaconsultar.getSemestre());
-        jTextaño.setText(certificacionaconsultar.getAño());
-        jTextFacultad.setText(certificacionaconsultar.getIdfacultades());
+        txtnombre.setText(certificacionaconsultar.getIdAlumno());
+        lblCarne.setText(certificacionaconsultar.getCarnet());
+        txtSemestre.setText(certificacionaconsultar.getSemestre());
+        lblYear.setText(certificacionaconsultar.getAño());
+        txtFacultad.setText(certificacionaconsultar.getIdfacultades());
 
     }
 
     public void limpiar() {
 
-        jTextnombre1.setText("");
-        jTextcarnet.setText("");
-        jTextSemestre.setText("");
-        jTextaño.setText("");
-        jTextFacultad.setText("");
+        txtnombre.setText("");
+        lblCarne.setText("");
+        txtSemestre.setText("");
+        lblYear.setText("");
+        txtFacultad.setText("");
     }
 
 
@@ -93,18 +89,18 @@ public void llenadoDeTablas(){
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jTextnombre1 = new javax.swing.JTextField();
-        jTextcarnet = new javax.swing.JTextField();
+        txtnombre = new javax.swing.JTextField();
+        lblCarne = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtnumero = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jTextaño = new javax.swing.JTextField();
+        lblYear = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        jTextFacultad = new javax.swing.JTextField();
+        txtFacultad = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jTextSemestre = new javax.swing.JTextField();
+        txtSemestre = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTablecertificado = new javax.swing.JTable();
         jButtonGuardar = new javax.swing.JButton();
@@ -112,6 +108,7 @@ public void llenadoDeTablas(){
         jButtoneliminar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setVisible(true);
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel1.setText("Certificacion de Cursos");
@@ -138,15 +135,15 @@ public void llenadoDeTablas(){
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtnumero, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel3)
                             .addComponent(jLabel5))
                         .addGap(27, 27, 27)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextcarnet, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextnombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(lblCarne, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(38, 38, 38)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel7)
@@ -154,9 +151,9 @@ public void llenadoDeTablas(){
                     .addComponent(jLabel6))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextaño, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextFacultad, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblYear, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtFacultad, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -164,22 +161,22 @@ public void llenadoDeTablas(){
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtnumero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4)
                     .addComponent(jLabel7)
-                    .addComponent(jTextaño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                    .addComponent(lblYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextnombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtnombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3)
                     .addComponent(jLabel6)
-                    .addComponent(jTextSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextcarnet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCarne, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5)
                     .addComponent(jLabel9)
-                    .addComponent(jTextFacultad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtFacultad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -221,10 +218,6 @@ public void llenadoDeTablas(){
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(122, 122, 122))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -242,6 +235,10 @@ public void llenadoDeTablas(){
                         .addGap(65, 65, 65)
                         .addComponent(jButtoneliminar)))
                 .addContainerGap(20, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(260, 260, 260))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -280,10 +277,15 @@ public void llenadoDeTablas(){
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private Connection connection = null;
+    
     private void jButtoneliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtoneliminarActionPerformed
        CertificacionCursoDAO certificacioncursoDAO = new CertificacionCursoDAO();
         CertificacionCurso certificacioncursoEliminar = new CertificacionCurso(); 
-
+     
+        certificacioncursoEliminar.setIdcertificacion(txtnumero.getText());
+        certificacioncursoDAO.delete(certificacioncursoEliminar);
+        JOptionPane.showMessageDialog(null, "Registro Eliminado.");
         llenadoDeTablas();
         limpiar();
         // TODO add your handling code here:
@@ -292,11 +294,11 @@ public void llenadoDeTablas(){
     private void jButtonModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonModificarActionPerformed
         CertificacionCursoDAO certificacioncursoDAO = new CertificacionCursoDAO();
         CertificacionCurso certificacioncursoActualizar = new CertificacionCurso(); 
-        certificacioncursoActualizar.setIdAlumno(jTextnombre1.getText());
-        certificacioncursoActualizar.setCarnet(jTextcarnet.getText());
-        certificacioncursoActualizar.setSemestre(jTextSemestre.getText());
-        certificacioncursoActualizar.setAño(jTextaño.getText());
-        certificacioncursoActualizar.setIdfacultades(jTextFacultad.getText());
+        certificacioncursoActualizar.setIdAlumno(txtnombre.getText());
+        certificacioncursoActualizar.setCarnet(lblCarne.getText());
+        certificacioncursoActualizar.setSemestre(txtSemestre.getText());
+        certificacioncursoActualizar.setAño(lblYear.getText());
+        certificacioncursoActualizar.setIdfacultades(txtFacultad.getText());
 
         JOptionPane.showMessageDialog(null, "Modificacion exitosa");
 
@@ -306,22 +308,21 @@ public void llenadoDeTablas(){
     }//GEN-LAST:event_jButtonModificarActionPerformed
 
     private void jButtonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGuardarActionPerformed
-         CertificacionCursoDAO certificacioncursoDAO = new CertificacionCursoDAO();
+        CertificacionCursoDAO certificacioncursoDAO = new CertificacionCursoDAO();
 
-        CertificacionCursoDAO certificacioncursoAInsertar = new CertificacionCursoDAO(); 
+        CertificacionCurso certificacioncursoAInsertar = new CertificacionCurso();
 
-
-        certificacioncursoAInsertar.setIdAlumno(jTextnombre1.getText());
-        certificacioncursoAInsertar.setCarnet(jTextcarnet.getText());
-        certificacioncursoAInsertar.setSemestre(jTextSemestre.getText());
-        certificacioncursoAInsertar.setAño(jTextaño.getText());
-        certificacioncursoAInsertar.setIdfacultades(jTextFacultad.getText());
+        certificacioncursoAInsertar.setIdAlumno(txtnombre.getText());
+        certificacioncursoAInsertar.setCarnet(lblCarne.getText());
+        certificacioncursoAInsertar.setSemestre(txtSemestre.getText());
+        certificacioncursoAInsertar.setAño(lblYear.getText());
+        certificacioncursoAInsertar.setIdfacultades(txtFacultad.getText());
 
         certificacioncursoDAO.insert(certificacioncursoAInsertar);
 
         llenadoDeTablas();
         limpiar();
-// TODO add your handling code here:
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButtonGuardarActionPerformed
 
     /**
@@ -374,11 +375,11 @@ public void llenadoDeTablas(){
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTablecertificado;
-    private javax.swing.JTextField jTextFacultad;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextSemestre;
-    private javax.swing.JTextField jTextaño;
-    private javax.swing.JTextField jTextcarnet;
-    private javax.swing.JTextField jTextnombre1;
+    private javax.swing.JTextField lblCarne;
+    private javax.swing.JTextField lblYear;
+    private javax.swing.JTextField txtFacultad;
+    private javax.swing.JTextField txtSemestre;
+    private javax.swing.JTextField txtnombre;
+    private javax.swing.JTextField txtnumero;
     // End of variables declaration//GEN-END:variables
 }

@@ -103,22 +103,22 @@
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="jTextField1" min="-2" pref="239" max="-2" attributes="0"/>
+                                              <Component id="txtnumero" min="-2" pref="239" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="jTextnombre1" min="-2" pref="239" max="-2" attributes="0"/>
+                                              <Component id="txtnombre" min="-2" pref="239" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="jTextcarnet" min="-2" pref="239" max="-2" attributes="0"/>
+                                              <Component id="lblCarne" min="-2" pref="239" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                              <Component id="jTextFielda" min="-2" pref="239" max="-2" attributes="0"/>
+                                              <Component id="txtApellido" min="-2" pref="239" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
@@ -130,10 +130,10 @@
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jTextFacultad" min="-2" pref="239" max="-2" attributes="0"/>
-                                          <Component id="jTextFieldr" min="-2" pref="239" max="-2" attributes="0"/>
-                                          <Component id="jTextaño" min="-2" pref="239" max="-2" attributes="0"/>
-                                          <Component id="jTextSemestre" min="-2" pref="239" max="-2" attributes="0"/>
+                                          <Component id="txtFacultad" min="-2" pref="239" max="-2" attributes="0"/>
+                                          <Component id="txtCarrera" min="-2" pref="239" max="-2" attributes="0"/>
+                                          <Component id="lblYear" min="-2" pref="239" max="-2" attributes="0"/>
+                                          <Component id="txtSemestre" min="-2" pref="239" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -157,30 +157,30 @@
                       <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtnumero" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextSemestre" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtSemestre" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextnombre1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtnombre" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextaño" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblYear" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFielda" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtApellido" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFieldr" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtCarrera" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextcarnet" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCarne" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextFacultad" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtFacultad" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="32" max="32767" attributes="0"/>
                       <Component id="jScrollPane1" min="-2" pref="234" max="-2" attributes="0"/>
@@ -313,13 +313,13 @@
                 <Property name="text" type="java.lang.String" value="Salir"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField1">
+            <Component class="javax.swing.JTextField" name="txtnumero">
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextnombre1">
+            <Component class="javax.swing.JTextField" name="txtnombre">
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFielda">
+            <Component class="javax.swing.JTextField" name="txtApellido">
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextcarnet">
+            <Component class="javax.swing.JTextField" name="lblCarne">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel6">
               <Properties>
@@ -341,13 +341,13 @@
                 <Property name="text" type="java.lang.String" value="Facultad"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextSemestre">
+            <Component class="javax.swing.JTextField" name="txtSemestre">
             </Component>
-            <Component class="javax.swing.JTextField" name="jTexta&#xf1;o">
+            <Component class="javax.swing.JTextField" name="lblYear">
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFieldr">
+            <Component class="javax.swing.JTextField" name="txtCarrera">
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextFacultad">
+            <Component class="javax.swing.JTextField" name="txtFacultad">
             </Component>
           </SubComponents>
         </Container>

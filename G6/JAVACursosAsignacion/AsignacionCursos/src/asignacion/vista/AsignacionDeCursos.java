@@ -105,6 +105,12 @@ public class AsignacionDeCursos extends javax.swing.JPanel {
         jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel4.setText("Año  :");
 
+        lblYear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lblYearActionPerformed(evt);
+            }
+        });
+
         jPanel2.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.highlight"));
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -368,6 +374,10 @@ public class AsignacionDeCursos extends javax.swing.JPanel {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void lblYearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblYearActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblYearActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

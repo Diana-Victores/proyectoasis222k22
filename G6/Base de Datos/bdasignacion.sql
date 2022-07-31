@@ -585,6 +585,7 @@ LOCK TABLES `Certificacion` WRITE;
 /*!40000 ALTER TABLE `Certificacion` DISABLE KEYS */;
 /*!40000 ALTER TABLE `Certificacion` ENABLE KEYS */;
 UNLOCK TABLES;
+
 DROP TABLE IF EXISTS CursosAsignados;
 CREATE TABLE CursosAsignados (
 	carnet int not null PRIMARY KEY,
@@ -601,4 +602,35 @@ CREATE TABLE CursosAsignados (
     Curso_Extraordinario_1 varchar(40),
     Curso_Extraordinario_2 varchar(40),
 	Curso_Extraordinario_3 varchar(40)
-)
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+DROP TABLE IF EXISTS CursosDisponibles;
+CREATE TABLE CursosDisponibles (
+	IdAlumno INT NOT NULL PRIMARY KEY,
+    Id_Curso1 varchar(5),
+    Curso_1 varchar(40),
+    Id_Curso2 varchar(5),
+    Curso_2 varchar(40),
+    Id_Curso3 varchar(5),
+    Curso_3 varchar(40),
+    Id_Curso4 varchar(5),
+    Curso_4 varchar(40),
+    Id_Curso5 varchar(5),
+    Curso_5 varchar(40),
+    Id_Curso_Ext1 varchar(5),
+    Curso_Extraordinario_1 varchar(40),
+    Id_Curso_Ext2 varchar(5),
+    Curso_Extraordinario_2 varchar(40),
+    Id_Curso_Ext3 varchar(5),
+	Curso_Extraordinario_3 varchar(40)
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+DROP TABLE IF EXISTS SecYHor;
+CREATE TABLE SecYHor (
+	IdCurso int NOT NULL PRIMARY KEY,
+    Curso varchar(20),
+    Seccion_A varchar(30),
+    Seccion_B varchar(30),
+    Seccion_C varchar(30),
+    Seccion_D varchar(30)
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;

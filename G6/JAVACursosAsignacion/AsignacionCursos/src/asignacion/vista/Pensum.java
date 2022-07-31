@@ -1,4 +1,7 @@
-
+/* 
+Josue Amaya 0901-19-12421
+Pensum : Vista de cursos segun facultad y carrera
+*/
 package asignacion.vista;
 
 public class Pensum extends javax.swing.JPanel {

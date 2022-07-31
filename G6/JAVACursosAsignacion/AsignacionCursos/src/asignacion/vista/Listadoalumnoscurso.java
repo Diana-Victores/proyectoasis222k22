@@ -1,7 +1,7 @@
 /*
-/* Joselyne Aracely Rivera Cifuentes
-/* carnet 0901-17-5
-/* Listado de alumnos por curso
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package asignacion.vista;
 
@@ -60,25 +60,25 @@ public class Listadoalumnoscurso extends javax.swing.JInternalFrame {
 
         listadoalumnoscursoconsultar = listadoalumnoscursoDAO.query(listadoalumnoscursoconsultar);
 
-        jTextnombre1.setText(listadoalumnoscursoconsultar.getIdAlumno());
-        jTextFielda.setText(listadoalumnoscursoconsultar.getApellidos());
-        jTextcarnet.setText(listadoalumnoscursoconsultar.getCarnet());
-        jTextSemestre.setText(listadoalumnoscursoconsultar.getSemestre());
-        jTextaño.setText(listadoalumnoscursoconsultar.getAño());
-        jTextFieldr.setText(listadoalumnoscursoconsultar.getIdcarrera());
-        jTextFacultad.setText(listadoalumnoscursoconsultar.getIdfacultades());
+        txtnombre.setText(listadoalumnoscursoconsultar.getIdAlumno());
+        txtApellido.setText(listadoalumnoscursoconsultar.getApellidos());
+        lblCarne.setText(listadoalumnoscursoconsultar.getCarnet());
+        txtSemestre.setText(listadoalumnoscursoconsultar.getSemestre());
+        lblYear.setText(listadoalumnoscursoconsultar.getAño());
+        txtCarrera.setText(listadoalumnoscursoconsultar.getIdcarrera());
+        txtFacultad.setText(listadoalumnoscursoconsultar.getIdfacultades());
 
     }
 
     public void limpiar() {
 
-        jTextnombre1.setText("");
-        jTextFielda.setText("");
-        jTextcarnet.setText("");
-        jTextSemestre.setText("");
-        jTextaño.setText("");
-        jTextFieldr.setText("");
-        jTextFacultad.setText("");
+        txtnombre.setText("");
+        txtApellido.setText("");
+        lblCarne.setText("");
+        txtSemestre.setText("");
+        lblYear.setText("");
+        txtCarrera.setText("");
+        txtFacultad.setText("");
     }
 
 
@@ -109,18 +109,18 @@ public class Listadoalumnoscurso extends javax.swing.JInternalFrame {
         jButtonModificar = new javax.swing.JButton();
         jButtoneliminar = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jTextnombre1 = new javax.swing.JTextField();
-        jTextFielda = new javax.swing.JTextField();
-        jTextcarnet = new javax.swing.JTextField();
+        txtnumero = new javax.swing.JTextField();
+        txtnombre = new javax.swing.JTextField();
+        txtApellido = new javax.swing.JTextField();
+        lblCarne = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jTextSemestre = new javax.swing.JTextField();
-        jTextaño = new javax.swing.JTextField();
-        jTextFieldr = new javax.swing.JTextField();
-        jTextFacultad = new javax.swing.JTextField();
+        txtSemestre = new javax.swing.JTextField();
+        lblYear = new javax.swing.JTextField();
+        txtCarrera = new javax.swing.JTextField();
+        txtFacultad = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -206,19 +206,19 @@ public class Listadoalumnoscurso extends javax.swing.JInternalFrame {
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
                                         .addComponent(jLabel2)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtnumero, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
                                         .addComponent(jLabel3)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jTextnombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
                                         .addComponent(jLabel5)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jTextcarnet, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(lblCarne, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
                                         .addComponent(jLabel4)
                                         .addGap(27, 27, 27)
-                                        .addComponent(jTextFielda, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(88, 88, 88)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel6)
@@ -227,10 +227,10 @@ public class Listadoalumnoscurso extends javax.swing.JInternalFrame {
                                     .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextFacultad, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextFieldr, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextaño, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(txtFacultad, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtCarrera, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblYear, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(141, 141, 141)
                         .addComponent(jButtonGuardar)
@@ -246,27 +246,27 @@ public class Listadoalumnoscurso extends javax.swing.JInternalFrame {
                 .addGap(16, 16, 16)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtnumero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6)
-                    .addComponent(jTextSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtSemestre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jTextnombre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtnombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7)
-                    .addComponent(jTextaño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jTextFielda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8)
-                    .addComponent(jTextFieldr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtCarrera, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jTextcarnet, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCarne, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9)
-                    .addComponent(jTextFacultad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtFacultad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(105, 105, 105)
@@ -329,13 +329,13 @@ public class Listadoalumnoscurso extends javax.swing.JInternalFrame {
 
        ListadoalumnoscursoDAO listadoalumnoscursoActualizar = new ListadoalumnoscursoDAO(); 
 
-        listadoalumnoscursoActualizar.setIdAlumno(jTextnombre1.getText());
-        listadoalumnoscursoActualizar.setApellidos(jTextFielda.getText());
-        listadoalumnoscursoActualizar.setCarnet(jTextcarnet.getText());
-        listadoalumnoscursoActualizar.setSemestre(jTextSemestre.getText());
-        listadoalumnoscursoActualizar.setAño(jTextaño.getText());
-        listadoalumnoscursoActualizar.setIdcarrera(jTextFieldr.getText());
-        listadoalumnoscursoActualizar.setIdfacultades(jTextFacultad.getText());
+        listadoalumnoscursoActualizar.setIdAlumno(txtnombre.getText());
+        listadoalumnoscursoActualizar.setApellidos(txtApellido.getText());
+        listadoalumnoscursoActualizar.setCarnet(lblCarne.getText());
+        listadoalumnoscursoActualizar.setSemestre(txtSemestre.getText());
+        listadoalumnoscursoActualizar.setAño(lblYear.getText());
+        listadoalumnoscursoActualizar.setIdcarrera(txtCarrera.getText());
+        listadoalumnoscursoActualizar.setIdfacultades(txtFacultad.getText());
 
         JOptionPane.showMessageDialog(null, "Modificacion exitosa");
 
@@ -350,13 +350,13 @@ public class Listadoalumnoscurso extends javax.swing.JInternalFrame {
         ListadoalumnoscursoDAO listadoalumnoscursoAInsertar = new ListadoalumnoscursoDAO(); 
 
 
-        listadoalumnoscursoAInsertar.setIdAlumno(jTextnombre1.getText());
-        listadoalumnoscursoAInsertar.setApellidos(jTextFielda.getText());
-        listadoalumnoscursoAInsertar.setCarnet(jTextcarnet.getText());
-        listadoalumnoscursoAInsertar.setSemestre(jTextSemestre.getText());
-        listadoalumnoscursoAInsertar.setAño(jTextaño.getText());
-        listadoalumnoscursoAInsertar.setIdcarrera(jTextFieldr.getText());
-        listadoalumnoscursoAInsertar.setIdfacultades(jTextFacultad.getText());
+        listadoalumnoscursoAInsertar.setIdAlumno(txtnombre.getText());
+        listadoalumnoscursoAInsertar.setApellidos(txtApellido.getText());
+        listadoalumnoscursoAInsertar.setCarnet(lblCarne.getText());
+        listadoalumnoscursoAInsertar.setSemestre(txtSemestre.getText());
+        listadoalumnoscursoAInsertar.setAño(lblYear.getText());
+        listadoalumnoscursoAInsertar.setIdcarrera(txtCarrera.getText());
+        listadoalumnoscursoAInsertar.setIdfacultades(txtFacultad.getText());
 
         listadoalumnoscursoDAO.insert(listadoalumnoscursoAInsertar);
 
@@ -402,6 +402,8 @@ public class Listadoalumnoscurso extends javax.swing.JInternalFrame {
         }
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -429,14 +431,14 @@ public class Listadoalumnoscurso extends javax.swing.JInternalFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTablecertificado;
-    private javax.swing.JTextField jTextFacultad;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextFielda;
-    private javax.swing.JTextField jTextFieldr;
-    private javax.swing.JTextField jTextSemestre;
-    private javax.swing.JTextField jTextaño;
-    private javax.swing.JTextField jTextcarnet;
-    private javax.swing.JTextField jTextnombre1;
+    private javax.swing.JTextField lblCarne;
+    private javax.swing.JTextField lblYear;
+    private javax.swing.JTextField txtApellido;
+    private javax.swing.JTextField txtCarrera;
+    private javax.swing.JTextField txtFacultad;
+    private javax.swing.JTextField txtSemestre;
+    private javax.swing.JTextField txtnombre;
+    private javax.swing.JTextField txtnumero;
     // End of variables declaration//GEN-END:variables
 
     private String getIdAlumno() {

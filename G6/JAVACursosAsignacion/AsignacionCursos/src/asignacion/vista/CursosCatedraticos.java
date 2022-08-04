@@ -16,6 +16,7 @@ public class CursosCatedraticos extends javax.swing.JPanel {
      * Creates new form CursosCatedraticos
      */
     public CursosCatedraticos() {
+        
         initComponents();
     }
 
@@ -46,6 +47,7 @@ public class CursosCatedraticos extends javax.swing.JPanel {
         tableC.addRow(dato);
     }
     }
+   
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -216,11 +218,18 @@ public class CursosCatedraticos extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnConsultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultarActionPerformed
+        
         String optst = (String) optionSTcat.getSelectedItem();
         String codcat = txtcodcat.getText();
         String yearcat = txtyearcat.getText();
         
+        asignacion.dominio.CursosCatedraticos catbuscar = new asignacion.dominio.CursosCatedraticos();
+        asignacion.datos.CursosCatedraticosDAO cursoscatedraticosDAO = new CursosCatedraticosDAO();
+        catbuscar = cursoscatedraticosDAO.query(catbuscar);
         
+        if (codcat.equals(catbuscar.getIdCat())) {
+            mostrartabla();
+        }
        
     }//GEN-LAST:event_btnConsultarActionPerformed
 
@@ -243,4 +252,5 @@ public class CursosCatedraticos extends javax.swing.JPanel {
     private javax.swing.JTextField txtcodcat;
     private javax.swing.JTextField txtyearcat;
     // End of variables declaration//GEN-END:variables
+
 }

@@ -16,6 +16,7 @@ public class AsignacionDeCursos extends javax.swing.JPanel {
     String cod, bpago, semtrim, yearas;
     String c1,c2,c3,c4,c5,ce1,ce2,ce3;
     String name,apellido;
+    String co1,co2,co3,co4,co5,cex1,cex2,cex3;
     
     public AsignacionDeCursos() {
         initComponents();
@@ -412,23 +413,73 @@ public class AsignacionDeCursos extends javax.swing.JPanel {
         String IdAlumno = (cursobusqueda.getIdAlumnoCD());
         
         if (IdAlumno.equals(cod)){
-            txtName.setText(cursobusqueda.getNombres() +" "+ cursobusqueda.getApellidos());
+            name = cursobusqueda.getNombres();
+            apellido = cursobusqueda.getApellidos();
+            txtName.setText(name +" "+ apellido);
             txtCurso1.setText(cursobusqueda.getCurso1());
-            if (cursobusqueda.getIdc1().equals(cursobusqueda.getIdsecyhor())) {CboxC1.addItem(cursobusqueda.getSecA());CboxC1.addItem(cursobusqueda.getSecB()); CboxC1.addItem(cursobusqueda.getSecC()); CboxC1.addItem(cursobusqueda.getSecD());}
+            co1 =  (cursobusqueda.getIdc1() + " " + cursobusqueda.getCurso1());
+            if (cursobusqueda.getIdc1().equals(cursobusqueda.getIdsecyhor())) {
+                CboxC1.addItem(cursobusqueda.getSecA());
+                CboxC1.addItem(cursobusqueda.getSecB());
+                CboxC1.addItem(cursobusqueda.getSecC());
+                CboxC1.addItem(cursobusqueda.getSecD());
+            }
             txtCurso2.setText(cursobusqueda.getCurso2());
-            if (cursobusqueda.getIdc2().equals(cursobusqueda.getIdsecyhor())) { CboxC2.addItem(cursobusqueda.getSecA()); CboxC2.addItem(cursobusqueda.getSecB()); CboxC2.addItem(cursobusqueda.getSecC()); CboxC2.addItem(cursobusqueda.getSecD());}
+            co2 = (cursobusqueda.getIdc2()+ " " + cursobusqueda.getCurso2());
+            if (cursobusqueda.getIdc2().equals(cursobusqueda.getIdsecyhor())) {
+                CboxC2.addItem(cursobusqueda.getSecA());
+                CboxC2.addItem(cursobusqueda.getSecB());
+                CboxC2.addItem(cursobusqueda.getSecC());
+                CboxC2.addItem(cursobusqueda.getSecD());
+            }
             txtCurso3.setText(cursobusqueda.getCurso3());
-            if (cursobusqueda.getIdc3().equals(cursobusqueda.getIdsecyhor())) { CboxC3.addItem(cursobusqueda.getSecA()); CboxC3.addItem(cursobusqueda.getSecB()); CboxC3.addItem(cursobusqueda.getSecC()); CboxC3.addItem(cursobusqueda.getSecD());}
+            co3 = (cursobusqueda.getIdc3() +" "+ cursobusqueda.getCurso3());
+            if (cursobusqueda.getIdc3().equals(cursobusqueda.getIdsecyhor())) {
+                CboxC3.addItem(cursobusqueda.getSecA());
+                CboxC3.addItem(cursobusqueda.getSecB());
+                CboxC3.addItem(cursobusqueda.getSecC());
+                CboxC3.addItem(cursobusqueda.getSecD());
+            }
             txtCurso4.setText(cursobusqueda.getCurso4());
-            if (cursobusqueda.getIdc4().equals(cursobusqueda.getIdsecyhor())) { CboxC4.addItem(cursobusqueda.getSecA()); CboxC4.addItem(cursobusqueda.getSecB()); CboxC4.addItem(cursobusqueda.getSecC()); CboxC4.addItem(cursobusqueda.getSecD());}
-            txtCurso5.setText(cursobusqueda.getCurso5());
-            if (cursobusqueda.getIdc5().equals(cursobusqueda.getIdsecyhor())) { CboxC5.addItem(cursobusqueda.getSecA()); CboxC5.addItem(cursobusqueda.getSecB()); CboxC5.addItem(cursobusqueda.getSecC()); CboxC5.addItem(cursobusqueda.getSecD());}
+            co4 = (cursobusqueda.getIdc4() +" "+ cursobusqueda.getCurso4() );
+            if (cursobusqueda.getIdc4().equals(cursobusqueda.getIdsecyhor())) {
+                CboxC4.addItem(cursobusqueda.getSecA());
+                CboxC4.addItem(cursobusqueda.getSecB());
+                CboxC4.addItem(cursobusqueda.getSecC());
+                CboxC4.addItem(cursobusqueda.getSecD());
+            }
+            txtCurso5.setText(cursobusqueda.getCurso5()); 
+            co5 = (cursobusqueda.getIdc5() +" "+ cursobusqueda.getCurso5());
+            if (cursobusqueda.getIdc5().equals(cursobusqueda.getIdsecyhor())) {
+                CboxC5.addItem(cursobusqueda.getSecA());
+                CboxC5.addItem(cursobusqueda.getSecB());
+                CboxC5.addItem(cursobusqueda.getSecC());
+                CboxC5.addItem(cursobusqueda.getSecD());
+            }
             txtCursoE1.setText(cursobusqueda.getCursoe1());
-            if (cursobusqueda.getIdce1().equals(cursobusqueda.getIdsecyhor())) { CboxCE1.addItem(cursobusqueda.getSecA()); CboxCE1.addItem(cursobusqueda.getSecB()); CboxCE1.addItem(cursobusqueda.getSecC()); CboxCE1.addItem(cursobusqueda.getSecD());}
+            cex1 = (cursobusqueda.getIdce1() +" "+ cursobusqueda.getCursoe1());
+            if (cursobusqueda.getIdce1().equals(cursobusqueda.getIdsecyhor())) {
+                CboxCE1.addItem(cursobusqueda.getSecA());
+                CboxCE1.addItem(cursobusqueda.getSecB());
+                CboxCE1.addItem(cursobusqueda.getSecC());
+                CboxCE1.addItem(cursobusqueda.getSecD());
+            }
             txtCursoE2.setText(cursobusqueda.getCursoe2());
-            if (cursobusqueda.getIdce2().equals(cursobusqueda.getIdsecyhor())) { CboxCE2.addItem(cursobusqueda.getSecA()); CboxCE2.addItem(cursobusqueda.getSecB()); CboxCE2.addItem(cursobusqueda.getSecC()); CboxCE2.addItem(cursobusqueda.getSecD());}
+            cex2 = (cursobusqueda.getIdce2() +" "+ cursobusqueda.getCursoe2());
+            if (cursobusqueda.getIdce2().equals(cursobusqueda.getIdsecyhor())) {
+                CboxCE2.addItem(cursobusqueda.getSecA());
+                CboxCE2.addItem(cursobusqueda.getSecB());
+                CboxCE2.addItem(cursobusqueda.getSecC());
+                CboxCE2.addItem(cursobusqueda.getSecD());
+            }
             txtCursoE3.setText(cursobusqueda.getCursoe3());
-            if (cursobusqueda.getIdce3().equals(cursobusqueda.getIdsecyhor())) { CboxCE3.addItem(cursobusqueda.getSecA()); CboxCE3.addItem(cursobusqueda.getSecB()); CboxCE3.addItem(cursobusqueda.getSecC()); CboxCE3.addItem(cursobusqueda.getSecD());}
+            cex3 = (cursobusqueda.getIdce3() +" "+ cursobusqueda.getCursoe3());
+            if (cursobusqueda.getIdce3().equals(cursobusqueda.getIdsecyhor())) {
+                CboxCE3.addItem(cursobusqueda.getSecA());
+                CboxCE3.addItem(cursobusqueda.getSecB());
+                CboxCE3.addItem(cursobusqueda.getSecC());
+                CboxCE3.addItem(cursobusqueda.getSecD());
+            }
         }
         
     }//GEN-LAST:event_btnIngresarActionPerformed
@@ -444,7 +495,26 @@ public class AsignacionDeCursos extends javax.swing.JPanel {
         ce2 = CboxCE2.getSelectedItem().toString();
         ce3 = CboxCE3.getSelectedItem().toString();
         
+        AsignacionCursosDAO asigcursosDAO = new AsignacionCursosDAO();
+        String id = "0";
+        asignacion.dominio.AsignacionCursos cursosasignados = new asignacion.dominio.AsignacionCursos();
         
+        cursosasignados.setIdAlumno(cod);
+        cursosasignados.setNombres(name);
+        cursosasignados.setApellidos(apellido);
+        cursosasignados.setBpago(bpago);
+        cursosasignados.setSemtrim(semtrim);
+        cursosasignados.setYearasig(yearas);
+        cursosasignados.setCurso1(co1 + " " + c1);
+        cursosasignados.setCurso2(co2 + " " + c2);
+        cursosasignados.setCurso3(co3 + " " + c3);
+        cursosasignados.setCurso4(co4 + " " + c4);
+        cursosasignados.setCurso5(co5 + " " + c5);
+        cursosasignados.setCursoe1(cex1 + " " + ce1);
+        cursosasignados.setCursoe2(cex2 + " " + ce2);
+        cursosasignados.setCursoe3(cex3 + " " + ce3);
+        
+        asigcursosDAO.insert(cursosasignados);
     }//GEN-LAST:event_btnAsignarActionPerformed
 
 

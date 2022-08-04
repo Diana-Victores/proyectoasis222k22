@@ -118,6 +118,17 @@ private static final String SQL_QUERY = "SELECT idAlumno, nombres, Apellidos FRO
             stmt.setString(1,asigcursos.getIdAlumno());
             stmt.setString(2, asigcursos.getNombres());
             stmt.setString(3, asigcursos.getApellidos());
+            stmt.setString(4, asigcursos.getBpago());
+            stmt.setString(5, asigcursos.getSemtrim());
+            stmt.setString(6, asigcursos.getYearasig());
+            stmt.setString(7, asigcursos.getCurso1());
+            stmt.setString(8, asigcursos.getCurso2());
+            stmt.setString(9, asigcursos.getCurso3());
+            stmt.setString(10, asigcursos.getCurso4());
+            stmt.setString(11, asigcursos.getCurso5());
+            stmt.setString(12, asigcursos.getCursoe1());
+            stmt.setString(13, asigcursos.getCursoe2());
+            stmt.setString(14, asigcursos.getCursoe3());
             stmt.setString(rows, SQL_QUERY);
             
              //System.out.println("ejecutando query:" + SQL_INSERT);

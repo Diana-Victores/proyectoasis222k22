@@ -10,6 +10,31 @@ public class AsignacionCursos {
     String idc1, idc2, idc3, idc4, idc5, idce1, idce2, idce3;
     String Curso1, Curso2, Curso3, Curso4, Curso5, Cursoe1, Cursoe2, Cursoe3;
     String idsecyhor, secA, secB, secC, secD;
+    String bpago, semtrim, yearasig;
+
+    public String getBpago() {
+        return bpago;
+    }
+
+    public void setBpago(String bpago) {
+        this.bpago = bpago;
+    }
+
+    public String getSemtrim() {
+        return semtrim;
+    }
+
+    public void setSemtrim(String semtrim) {
+        this.semtrim = semtrim;
+    }
+
+    public String getYearasig() {
+        return yearasig;
+    }
+
+    public void setYearasig(String yearasig) {
+        this.yearasig = yearasig;
+    }
 
     public String getIdAlumno() {
         return idAlumno;
